@@ -35,7 +35,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f8fafc;
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #1e293b;
   line-height: 1.6;
 }
@@ -43,6 +47,7 @@ body {
 #root {
   width: 100%;
   min-height: 100vh;
+  height: 100%;
 }
 
 /* Syntax highlighting styles */

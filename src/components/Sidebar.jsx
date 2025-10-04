@@ -6,15 +6,15 @@ const Sidebar = ({ isOpen }) => {
 
   const navigationItems = [
     { path: '/', icon: Home, label: 'Home' },
-    { path: '/page/getting-started', icon: FileText, label: 'Getting Started' },
-    { path: '/page/about', icon: Gamepad2, label: 'About' },
-    { path: '/page/team', icon: Users, label: 'Team' },
-    { path: '/search', icon: Search, label: 'Search' },
+    { path: '/page/about', icon: Gamepad2, label: 'Sobre o jogo' },
+    { path: '/page/resources', icon: FileText, label: 'Slimes e Recursos' },
+    { path: '/page/team', icon: Users, label: 'Equipe Desenvolvedora' },
+    { path: '/search', icon: Search, label: 'Procurar' },
   ];
 
   const recentPages = [
-    { path: '/page/getting-started', title: 'Getting Started' },
-    { path: '/page/about', title: 'About This Wiki' },
+    { path: '/page/about', title: 'Getting Started' },
+    { path: '/page/resources', title: 'About This Wiki' },
     { path: '/page/team', title: 'Our Team' },
   ];
 

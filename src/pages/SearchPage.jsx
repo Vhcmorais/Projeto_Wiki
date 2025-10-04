@@ -8,7 +8,6 @@ const SearchPage = () => {
   const [results, setResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  // Sample search data - in a real app, this would come from an API
   const searchData = [
     {
       id: 1,
@@ -60,7 +59,6 @@ const SearchPage = () => {
 
     setIsLoading(true);
     
-    // Simulate API delay
     setTimeout(() => {
       const filteredResults = searchData.filter(item =>
         item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -95,8 +93,8 @@ const SearchPage = () => {
   return (
     <div className="search-page">
       <div className="search-header">
-        <h1>Search Wiki</h1>
-        <p>Find the information you need quickly and easily</p>
+        <h1>Procure na Wiki</h1>
+        <p>Encontre a informação que deseja de maneira rápida e fácil</p>
       </div>
 
       <div className="search-form-container">

@@ -24,7 +24,7 @@ const Header = ({ onToggleSidebar }) => {
           </button>
           <div className="logo">
             <Gamepad2 size={24} />
-            <span>Slime Rancher 2 - Wiki</span>
+            <span>Slime Rancher - Fan Wiki</span>
           </div>
         </div>
         

@@ -1,23 +1,23 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, BookOpen, Users, FileText, Search } from 'lucide-react';
+import { ArrowRight, Gamepad2, Users, FileText, Search } from 'lucide-react';
 
 const HomePage = () => {
   const featuredPages = [
     {
-      title: 'Getting Started',
-      description: 'Learn the basics of using this wiki',
-      path: '/page/getting-started',
-      icon: BookOpen
+      title: 'Sobre o jogo',
+      description: 'Saiba mais sobre Slime Rancher',
+      path: '/page/about',
+      icon: Gamepad2
     },
     {
-      title: 'About This Wiki',
-      description: 'Learn more about this wiki and its purpose',
-      path: '/page/about',
+      title: 'Slimes e Recursos',
+      description: 'Conheça as mais variadas slimes e recursos de Slime Rancher',
+      path: '/page/resources',
       icon: FileText
     },
     {
-      title: 'Our Team',
-      description: 'Meet the people behind this wiki',
+      title: 'Desenvolvedores',
+      description: 'Saiba mais sobre a Monomi Park, empresa desenvolvedora de Slime Rancher',
       path: '/page/team',
       icon: Users
     }
@@ -26,22 +26,22 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <div className="hero-section">
-        <h1>Welcome to Our Wiki</h1>
-        <p>A comprehensive knowledge base for all your documentation needs.</p>
+        <h1>Slime Rancher Wiki</h1>
+        <p>Todas as informações sobre Slime Rancher em um só lugar.</p>
         <div className="hero-actions">
           <Link to="/search" className="btn btn-primary">
             <Search size={18} />
-            Search Wiki
+            Encontre na wiki
           </Link>
           <Link to="/page/getting-started" className="btn btn-secondary">
-            Get Started
+            Sobre o jogo
             <ArrowRight size={18} />
           </Link>
         </div>
       </div>
 
       <div className="featured-pages">
-        <h2>Featured Pages</h2>
+        <h2>Páginas em Destaque</h2>
         <div className="pages-grid">
           {featuredPages.map((page) => {
             const Icon = page.icon;
@@ -63,16 +63,16 @@ const HomePage = () => {
 
       <div className="quick-stats">
         <div className="stat">
-          <h3>50+</h3>
-          <p>Articles</p>
+          <h3>+ 5 Mi</h3>
+          <p>cópias vendidas em todas as plataformas</p>
         </div>
         <div className="stat">
-          <h3>10+</h3>
-          <p>Categories</p>
+          <h3>+ 17 mil</h3>
+          <p>jogadores simultâneos</p>
         </div>
         <div className="stat">
-          <h3>5+</h3>
-          <p>Contributors</p>
+          <h3>+ 8 anos</h3>
+          <p>de lançamento</p>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ const DarkModeContext = createContext();
 export const useDarkMode = () => {
   const context = useContext(DarkModeContext);
   if (!context) {
-    throw new Error('useDarkMode must be used within a DarkModeProvider');
+    throw new Error('useDarkMode DEVE ser usado dentro de um DarkModeProvider.');
   }
   return context;
 };
