@@ -9,7 +9,7 @@ import { DarkModeProvider } from './contexts/DarkModeContext';
 import './App.css';
 
 function App() {
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <DarkModeProvider>
