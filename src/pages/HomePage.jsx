@@ -24,10 +24,15 @@ const HomePage = () => {
   ];
 
   return (
+    // abre a div da sessão home page
     <div className="home-page">
+
+    {/* Abre a div da sessão hero-section, componentes de texto do hero da página */}
       <div className="hero-section">
         <h1>Slime Rancher Wiki</h1>
         <p>Todas as informações sobre Slime Rancher em um só lugar.</p>
+
+        {/* Abre a div da sessão hero-actions, botões de ação do hero da página */}
         <div className="hero-actions">
           <Link to="/search" className="btn btn-primary">
             <Search size={18} />
@@ -37,11 +42,25 @@ const HomePage = () => {
             Sobre o jogo
             <ArrowRight size={18} />
           </Link>
-        </div>
-      </div>
+        </div> {/* Fecha a div da sessão hero-actions */}
+        
+        {/* Abre a div da sessão hero-image, imagem do hero da página */}
+        <div className="hero-image-right">
+          <img src="images/beatrix_hero.png" alt="Imagem do Beatrix" />
+        </div> {/* Fecha a div da sessão hero-image */}
 
+        <div className="hero-image-left">
+          <img src="images/slime_hero.png" alt="Imagem slime rosa" />
+        </div> {/* Fecha a div da sessão hero-image */}
+
+      </div> {/* Fecha a div da sessão hero-section */}
+
+
+      {/* Abre a div da sessão featured-pages, páginas em destaque da home page */}
       <div className="featured-pages">
         <h2>Páginas em Destaque</h2>
+
+        {/* Abre a div da sessão pages-grid, grid das páginas em destaque */}
         <div className="pages-grid">
           {featuredPages.map((page) => {
             const Icon = page.icon;
@@ -59,8 +78,9 @@ const HomePage = () => {
             );
           })}
         </div>
-      </div>
-
+      </div> {/* Fecha a div da sessão featured-pages */}
+      
+      {/* Abre a div da sessão quick-stats, estatísticas rápidas da home page */}
       <div className="quick-stats">
         <div className="stat">
           <h3>+ 5 Mi</h3>
