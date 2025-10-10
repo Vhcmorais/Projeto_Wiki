@@ -109,6 +109,7 @@ body::before {
 .logo img{
   height: 50px;
   width: auto;
+  pointer-events: none;
 }
 
 .logo span {
@@ -120,6 +121,7 @@ body::before {
   background-clip: text;
   -webkit-background-clip: text;
   animation: rainbowText 4s linear infinite alternate;
+  pointer-events: none;
 }
 
 .search-form {
