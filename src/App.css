@@ -195,14 +195,16 @@ body::before {
 
 /* Sidebar */
 .sidebar {
-  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
   background: white;
   border-right: 2px solid #e2e8f0;
-  transition: transform 0.3s ease;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
   overflow-y: auto;
-  position: fixed;
-  left: auto;
-  height: calc(100vh - 80px);
+  transition: transform 0.3s ease;
   z-index: 50;
   transform: translateX(0);
 }
@@ -212,7 +214,8 @@ body::before {
 }
 
 .sidebar-content {
-  padding: 2rem 0;
+  justify-content: center;
+  padding: 1rem 0;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -220,18 +223,18 @@ body::before {
 
 .sidebar-nav,
 .recent-pages {
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   margin-bottom: 2rem;
 }
 
 .sidebar-nav h3,
 .recent-pages h3 {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #64748b;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .sidebar-nav ul,
@@ -241,7 +244,7 @@ body::before {
 
 .sidebar-nav li,
 .recent-pages li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .nav-link {
@@ -1153,7 +1156,15 @@ body::before {
 }
 
 .dark .nav-link {
-  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
 }
 
 .dark .nav-link:hover {
@@ -1162,8 +1173,9 @@ body::before {
 }
 
 .dark .nav-link.active {
-  background-color: rgba(96, 165, 250, 0.1);
-  color: var(--accent);
+  background-color: var(--border-light);
+  color: #f163fe;
+  font-weight: 500;
 }
 
 .dark .recent-link {

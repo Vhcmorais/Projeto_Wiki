@@ -13,9 +13,8 @@ const Sidebar = ({ isOpen }) => {
   ];
 
   const recentPages = [
-    { path: '/page/about', title: 'Getting Started' },
-    { path: '/page/resources', title: 'About This Wiki' },
-    { path: '/page/team', title: 'Our Team' },
+    { path: '/page/dev', title: 'Desenvolvedor da Wiki' },
+    { path: '/page/arquiteture', title: 'Arquitetura da Wiki' },
   ];
 
   return (
@@ -43,7 +42,7 @@ const Sidebar = ({ isOpen }) => {
         </nav>
 
         <div className="recent-pages">
-          <h3>Recent Pages</h3>
+          <h3>Adicionado recentemente!</h3>
           <ul>
             {recentPages.map((page) => (
               <li key={page.path}>
