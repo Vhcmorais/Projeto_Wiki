@@ -14,7 +14,7 @@ const Sidebar = ({ isOpen }) => {
 
   const recentPages = [
     { path: '/page/dev', title: 'Desenvolvedor da Wiki' },
-    { path: '/page/arquiteture', title: 'Arquitetura da Wiki' },
+    { path: '/page/architecture', title: 'Arquitetura da Wiki' },
   ];
 
   return (
