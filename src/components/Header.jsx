@@ -1,4 +1,4 @@
-import { Search, Menu, Gamepad2, Moon, Sun } from 'lucide-react';
+import { Search, Menu, Moon, Sun } from 'lucide-react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDarkMode } from '../contexts/DarkModeContext';
@@ -20,10 +20,10 @@ const Header = ({ onToggleSidebar }) => {
       <div className="header-content">
         <div className="header-left">
           <button className="menu-button" onClick={onToggleSidebar}>
-            <Menu size={20} />
+            <Menu size={25} />
           </button>
           <div className="logo">
-            <Gamepad2 size={24} />
+            <img src ="images/slimeHeader.png" alt="Slime Header" className="header-icon" />
             <span>Slime Rancher - Fan Wiki</span>
           </div>
         </div>
@@ -47,7 +47,7 @@ const Header = ({ onToggleSidebar }) => {
             onClick={toggleDarkMode}
             title={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
           >
-            {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
+            {isDarkMode ? <Sun size={25} /> : <Moon size={25} />}
           </button>
         </div>
       </div>

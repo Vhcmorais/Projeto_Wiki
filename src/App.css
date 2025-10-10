@@ -58,7 +58,7 @@ body::before {
   background: white;
   border-bottom: 1px solid #e2e8f0;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 100;
 }
@@ -83,6 +83,8 @@ body::before {
   border: none;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  position: absolute;
+  left: 1rem;
   cursor: pointer;
   color: #64748b;
   transition: all 0.2s ease;
@@ -94,12 +96,30 @@ body::before {
 }
 
 .logo {
+  position: absolute;
+  left: 5rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 1.25rem;
   font-weight: 600;
   color: #1e293b;
+}
+
+.logo img{
+  height: 50px;
+  width: auto;
+}
+
+.logo span {
+  font-family: 'Playwrite DE SAS', sans-serif;
+  font-size: 25px;
+  background: linear-gradient(90deg, #d1cbd3, #ee72e8, #fd39ed, #e796ff, #ff30a9, #fcb7c2, #f398bb, #f700ff);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: rainbowText 4s linear infinite alternate;
 }
 
 .search-form {
@@ -117,7 +137,7 @@ body::before {
 .search-icon {
   position: absolute;
   left: 0.75rem;
-  color: #64748b;
+  color: #f774e5;
   pointer-events: none;
 }
 
@@ -133,7 +153,7 @@ body::before {
 
 .search-input:focus {
   outline: none;
-  border-color: #3b82f6;
+  border-color: #f774e5;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
@@ -145,11 +165,13 @@ body::before {
 
 .dark-mode-toggle {
   background: none;
-  border: 1px solid #d1d5db;
+  position: absolute;
+  right: 1rem;
+  border: 1px solid#e796ff;
   padding: 0.5rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  color: #64748b;
+  color: #e796ff;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
@@ -164,15 +186,14 @@ body::before {
 
 /* Sidebar */
 .sidebar {
-  width: 280px;
+  width: 250px;
   background: white;
-  border-right: 1px solid #e2e8f0;
+  border-right: 2px solid #e2e8f0;
   transition: transform 0.3s ease;
   overflow-y: auto;
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
+  left: auto;
+  height: calc(100vh - 80px);
   z-index: 50;
   transform: translateX(0);
 }
@@ -1416,5 +1437,14 @@ body::before {
     transform: translateY(-35px);
   } 100% {
     transform: translateY(-50px);
+  }
+}
+
+@keyframes rainbowText {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
   }
 }

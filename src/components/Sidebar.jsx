@@ -5,7 +5,7 @@ const Sidebar = ({ isOpen }) => {
   const location = useLocation();
 
   const navigationItems = [
-    { path: '/', icon: Home, label: 'Home' },
+    { path: '/', icon: Home, label: 'Página Inicial' },
     { path: '/page/about', icon: Gamepad2, label: 'Sobre o jogo' },
     { path: '/page/resources', icon: FileText, label: 'Slimes e Recursos' },
     { path: '/page/team', icon: Users, label: 'Equipe Desenvolvedora' },
@@ -22,7 +22,7 @@ const Sidebar = ({ isOpen }) => {
     <aside className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
       <div className="sidebar-content">
         <nav className="sidebar-nav">
-          <h3>Navigation</h3>
+          <h3>Tópicos</h3>
           <ul>
             {navigationItems.map((item) => {
               const Icon = item.icon;
