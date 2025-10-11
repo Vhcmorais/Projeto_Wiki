@@ -44,13 +44,19 @@ const Sidebar = ({ isOpen }) => {
         <div className="recent-pages">
           <h3>Adicionado recentemente!</h3>
           <ul>
-            {recentPages.map((page) => (
-              <li key={page.path}>
-                <Link to={page.path} className="recent-link">
-                  {page.title}
-                </Link>
-              </li>
-            ))}
+            {recentPages.map((page) => {
+              const isActive = location.pathname === page.path;
+              return (
+                <li key={page.path}>
+                  <Link
+                    to={page.path}
+                    className={`recent-link${isActive ? ' active' : ''}`}
+                  >
+                    {page.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
