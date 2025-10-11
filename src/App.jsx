@@ -7,10 +7,10 @@ import Sidebar from './components/Sidebar';
 import HomePage from './pages/HomePage';
 import SearchPage from './pages/SearchPage';
 import AboutPage from './pages/AboutPage';
-import DevTeam from './pages/Dev_Team_Page';
+import Dev_Team_Page from './pages/Dev_Team_Page';
 import SlimesPage from './pages/SlimesPage';
-import WikiDev from './pages/WikiDevPage';
-import Architecture from './pages/ArchitecturePage';
+import WikiDevPage from './pages/WikiDevPage';
+import ArchitecturePage from './pages/ArchitecturePage';
 
 import { DarkModeProvider } from './contexts/DarkModeContext';
 import './App.css';
