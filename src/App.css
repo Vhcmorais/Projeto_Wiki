@@ -1224,8 +1224,9 @@ body::before {
 }
 
 .dark .featured-pages h2 {
-  color: white;
-}
+  color: var(--bg-secondary);
+  font-size: 45px;
+  text-shadow: 0 4px 4px #ea00ff;}
 
 .dark .page-card {
   background: var(--bg-secondary);

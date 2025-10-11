@@ -26,15 +26,15 @@ function App() {
           <div className="app-content">
             <Sidebar isOpen={sidebarOpen} />
             <main className="main-content">
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/search" element={<SearchPage />} />
-                <Route path="/about" element={<AboutPage />} />
-                <Route path="/resources" element={<SlimesPage />} />
-                <Route path="/team" element={<Dev_Team_Page />} />
-                <Route path="/dev" element={<WikiDevPage />} />
-                <Route path="/architecture" element={<ArchitecturePage />} />
-              </Routes>
+                <Routes>
+                  <Route path="/" element={<HomePage />} />
+                  <Route path="/search" element={<SearchPage />} />
+                  <Route path="/about" element={<AboutPage />} />
+                  <Route path="/resources" element={<SlimesPage />} />
+                  <Route path="/team" element={<Dev_Team_Page />} />
+                  <Route path="/dev" element={<WikiDevPage />} />
+                  <Route path="/architecture" element={<ArchitecturePage />} />
+                </Routes>
             </main>
           </div>
         </div>
