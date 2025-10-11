@@ -26,6 +26,7 @@ function App() {
           <div className="app-content">
             <Sidebar isOpen={sidebarOpen} />
             <main className="main-content">
+              <div className="content-blur">
                 <Routes>
                   <Route path="/" element={<HomePage />} />
                   <Route path="/search" element={<SearchPage />} />
@@ -35,6 +36,7 @@ function App() {
                   <Route path="/dev" element={<WikiDevPage />} />
                   <Route path="/architecture" element={<ArchitecturePage />} />
                 </Routes>
+              </div>
             </main>
           </div>
         </div>
