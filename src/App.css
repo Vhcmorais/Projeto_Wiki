@@ -483,8 +483,8 @@ body::before {
 }
 
 .btn-primary {
-  background-color: white;
-  color: #667eea;
+  background-color: #E6F0FF;
+  color: #1A57FF;
 }
 
 .btn-primary:hover {
@@ -508,10 +508,11 @@ body::before {
 }
 
 .featured-pages h2 {
-  font-size: 2rem;
+  font-size: 45px;
   font-weight: 600;
   margin-bottom: 2rem;
-  color: #1e293b;
+  color: white;
+  text-shadow: 0 2px 2px #1A57FF;
 }
 
 .pages-grid {
