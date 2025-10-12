@@ -78,8 +78,8 @@ body::before {
   justify-content: space-between;
   align-items: center;
   height: 90px;
-  background: white;
-  border-bottom: 1px solid #e2e8f0;
+  background: #E6F0FF;
+  border-bottom: 1px solid #B3CFFF;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   position: relative;
   top: 0;
@@ -110,7 +110,7 @@ body::before {
   position: absolute;
   left: 1rem;
   cursor: pointer;
-  color: #64748b;
+  color: #1A57FF;
   transition: all 0.2s ease;
 }
 
@@ -139,6 +139,18 @@ body::before {
 .logo span {
   font-family: 'Playwrite DE SAS', sans-serif;
   font-size: 25px;
+  background: linear-gradient(90deg, #001F3F, #003366, #004C99, #0066CC, #1A75FF, #3385FF);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: rainbowText 4s linear infinite alternate;
+  pointer-events: none;
+}
+
+.dark .logo span {
+  font-family: 'Playwrite DE SAS', sans-serif;
+  font-size: 25px;
   background: linear-gradient(90deg, #d1cbd3, #ee72e8, #fd39ed, #e796ff, #ff30a9, #fcb7c2, #f398bb, #f700ff);
   background-size: 200% auto;
   color: transparent;
@@ -165,21 +177,35 @@ body::before {
 .search-icon {
   position: absolute;
   left: 0.75rem;
+  color: #1A57FF;
+  pointer-events: none;
+}
+
+.dark .search-icon {
+  position: absolute;
+  left: 0.75rem;
   color: #f774e5;
   pointer-events: none;
 }
 
 .search-input {
+  color: #0066CC;
   width: 100%;
   padding: 0.75rem 0.75rem 0.75rem 2.5rem;
   border: 1px solid #d1d5db;
   border-radius: 0.5rem;
-  font-size: 0.875rem;
-  background: white;
+  font-size: 1rem;
+  background: #F2F7FF;
   transition: all 0.2s ease;
 }
 
 .search-input:focus {
+  outline: none;
+  border-color: #1A57FF;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.dark .search-input:focus {
   outline: none;
   border-color: #f774e5;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
@@ -192,6 +218,21 @@ body::before {
 }
 
 .dark-mode-toggle {
+  background: none;
+  position: absolute;
+  right: 1rem;
+  border: 1px solid #1A57FF;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #1A57FF;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark .dark-mode-toggle {
   background: none;
   position: absolute;
   right: 1rem;
@@ -1143,7 +1184,8 @@ body::before {
 .dark .search-input {
   background: var(--bg-tertiary);
   border-color: var(--border-color);
-  color: var(--text-primary);
+  color: #ea00ff;
+  font-size: 1rem;
 }
 
 .dark .search-input:focus {
