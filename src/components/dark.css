@@ -1,0 +1,119 @@
+/*  =====================================================  ESTILIZAÇÕES HEADER - DARK MODE ============================================================================*/
+
+/* Componente Header - Dark Mode */
+.dark .header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 1px 3px 0 var(--shadow);
+}
+
+.dark .header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.dark .header-left, .dark .header-center, .dark .header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dark .header-left {
+  min-width: 0;
+}
+
+/* Componente Menu - Dark Mode */
+.dark .menu-button {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #ea00ff;
+    transition: all 0.2s ease;
+}
+
+.dark .menu-button:hover {
+  background-color: #334155;
+  color: #f163fe;
+}
+
+/* Componente Logo - Dark Mode */
+.dark .logo {
+  color: var(--text-primary);
+}
+
+.dark .logo span {
+    font-family: 'Playwrite DE SAS', sans-serif;
+    font-size: 25px;
+    background: linear-gradient(90deg, #FF66CC, #E254D4, #B84DFF, #8B4DFF, #5E3AFF, #3A2A72);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbowText 4s linear infinite alternate;
+}
+
+/* Componente Search - Dark Mode */
+.dark .search-form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.dark .search-input-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dark .search-icon {
+  position: absolute;
+  left: 1rem;
+  color: #f774e5;
+}
+
+.dark .search-input {
+    width: 100%;
+    padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background: var(--bg-tertiary);
+    color: #ea00ff;
+    transition: all 0.15s ease;
+    box-sizing: border-box;
+}
+
+.dark .search-input:focus {
+    outline: none;
+    border-color: #f163fe;
+    box-shadow: 0 0 0 3px rgba(241,99,254,0.08);
+}
+
+/* Componente Dark Mode Toggle (Botão modo) - Dark Mode */
+.dark .dark-mode-toggle {
+    background: none;
+    border: 1px solid #f163fe;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #f163fe;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease;
+}

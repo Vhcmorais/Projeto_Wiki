@@ -1,0 +1,155 @@
+/*  =====================================================  ESTILIZAÇÕES HEADER - DEFAULT ============================================================================*/
+
+/* Componente Header - Default */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #E6F0FF;
+  border-bottom: 1px solid #B3CFFF;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.header-left,
+.header-center,
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-left {
+  min-width: 0; 
+}
+
+/* Componente Menu - Default */
+.menu-button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #1A57FF;
+  transition: all 0.2s ease;
+}
+
+/* Componente Logo - Default */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  pointer-events: none;
+}
+
+.logo span {
+  font-family: 'Playwrite DE SAS', sans-serif;
+  font-size: 25px;
+  background: linear-gradient(90deg, #001F3F, #003366, #004C99, #0066CC, #1A75FF, #3385FF);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: rainbowText 4s linear infinite alternate;
+  pointer-events: none;
+}
+
+/* Componente Search - Default */
+.search-form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.search-input-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  pointer-events: none;
+  color: #1A57FF;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background: #F2F7FF;
+  color: #0066CC;
+  transition: all 0.15s ease;
+  box-sizing: border-box;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #1A57FF;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.08);
+}
+
+/* Componente Dark Mode Toggle (Botão modo) - Default */
+.dark-mode-toggle {
+  background: none;
+  border: 1px solid #1A57FF;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #1A57FF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+/* ---------- Responsividade ---------- */
+@media (max-width: 980px) {
+  .header-content { padding: 0 1rem; }
+  .search-form { max-width: 420px; }
+  .logo span { display: none; }
+}
+
+@media (max-width: 640px) {
+  .header-content {
+    gap: 0.5rem;
+  }
+  .search-form { display: none; }
+  .logo img { height: 40px; }
+}
+
+/* Animações do Header */
+@keyframes rainbowText {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}

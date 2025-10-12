@@ -2,6 +2,8 @@ import { Search, Menu, Moon, Sun } from 'lucide-react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDarkMode } from '../contexts/DarkModeContext';
+import './header.css';
+import './dark.css';
 
 const Header = ({ onToggleSidebar }) => {
   const [searchQuery, setSearchQuery] = useState('');
