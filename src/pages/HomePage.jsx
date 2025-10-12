@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Gamepad2, Users, FileText, Search } from 'lucide-react';
+import { useDarkMode } from '../contexts/DarkModeContext';
 
 const HomePage = () => {
+  const {isDarkMode} = useDarkMode();
   const featuredPages = [
     {
       title: 'Sobre o jogo',
@@ -47,11 +49,13 @@ const HomePage = () => {
         {/* Abre a div da sessão hero-image, imagem do hero da página */}
         <div className="hero-image-right">
           <img src="images/beatrix_hero.png" alt="Imagem do Beatrix" />
-        </div> {/* Fecha a div da sessão hero-image */}
+        </div> {/* Fecha a div da sessão hero-image-right */}
 
         <div className="hero-image-left">
-          <img src="images/slime_hero.png" alt="Imagem slime rosa" />
-        </div> {/* Fecha a div da sessão hero-image */}
+          <img
+            src={isDarkMode ? "/images/brreu-hero.png" : "/images/slime_hero.png"}
+            alt="Hero Left"/>
+        </div> {/* Fecha a div da sessão hero-image-left */}
 
       </div> {/* Fecha a div da sessão hero-section */}
 
