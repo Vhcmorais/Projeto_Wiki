@@ -1,5 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Home, FileText, Search, Gamepad2, Users, Settings } from 'lucide-react';
+import '../pages/cssPages/Sidebar.css';
+import '../pages/cssPages/dark.css';
 
 const Sidebar = ({ isOpen }) => {
   const location = useLocation();
@@ -42,7 +44,7 @@ const Sidebar = ({ isOpen }) => {
         </nav>
 
         <div className="recent-pages">
-          <h3>Adicionado recentemente!</h3>
+          <h3>Adicionado recentemente</h3>
           <ul>
             {recentPages.map((page) => {
               const isActive = location.pathname === page.path;

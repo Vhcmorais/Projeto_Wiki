@@ -1,0 +1,263 @@
+/*  =====================================================  ESTILIZAÇÕES HEADER - DEFAULT ============================================================================*/
+
+/* Componente Header - Default */
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Componente Hero Section - Default */
+.hero-section {
+  text-align: center;
+  padding: 4rem 0;
+  background: 
+    linear-gradient(135deg, rgba(102, 126, 234, 0.7) 0%, rgba(118, 75, 162, 0.7) 100%),
+    radial-gradient(circle at 20% 20%, #FFD700 0%, transparent 60%),
+    radial-gradient(circle at 80% 80%, #32CD32 0%, transparent 60%),
+    radial-gradient(circle at 40% 60%, #FFA500 0%, transparent 50%),
+    radial-gradient(circle at 60% 30%, #90EE90 0%, transparent 40%),
+    linear-gradient(45deg, #FFE4B5 0%, #87CEEB 25%, #90EE90 50%, #FFD700 75%, #FFA500 100%);
+  background-size: 100% 100%, 400px 400px, 500px 500px, 300px 300px, 350px 350px, 200% 200%;
+  background-position: center, 20% 20%, 80% 80%, 40% 60%, 60% 30%, 0% 50%;
+  background-repeat: no-repeat;
+  color: white;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+  animation: backgroundShift 12s ease-in-out infinite;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 30%, rgba(255, 165, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 70%, rgba(144, 238, 144, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 90% 80%, rgba(50, 205, 50, 0.1) 0%, transparent 50%);
+  animation: slimeFloat 15s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero-image-right img {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  height: 350px;
+  width: auto;
+  pointer-events: none;
+  animation: float 3s ease-in-out infinite;
+  border-radius: 20px;
+}
+
+.hero-image-left img {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  height: 240px;
+  width: auto;
+  pointer-events: none;
+  animation: float_little 3s ease-in-out infinite;
+  border-radius: 20px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  background-color: #D6E6FF;
+  color: #1A57FF;
+}
+
+.btn-primary:hover {
+  background-color: #f8fafc;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Componente Featured Pages - Default */
+.featured-pages {
+  margin-bottom: 3rem;
+}
+
+.featured-pages h2 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: white;
+  text-shadow: 0 2px 2px #1A57FF;
+}
+
+.pages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.page-card {
+  background: #D6E6FF;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
+}
+
+.page-icon {
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.page-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+.page-card p {
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.page-arrow {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: #cbd5e1;
+  transition: all 0.2s ease;
+}
+
+.page-card:hover .page-arrow {
+  color: #667eea;
+  transform: translateX(2px);
+}
+
+/* Componente Quick Stats - Default */
+.quick-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.stat {
+  text-align: center;
+  padding: 1.5rem;
+  background: #D6E6FF;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+}
+
+.stat h3 {
+   font-family: 'Playwrite DE SAS', sans-serif;
+   font-size: 25px;
+   background: linear-gradient(90deg, #001F3F, #003366, #004C99, #0066CC, #1A75FF, #3385FF);
+   background-size: 200%;
+   color: transparent;
+   background-clip: text;
+   -webkit-background-clip: text;
+   animation: rainbowText 4s linear infinite alternate;
+   pointer-events: none;
+}
+
+.stat p {
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Animações para Home Page*/
+@keyframes backgroundShift {
+  0%, 100% {
+    background-position: center, 20% 20%, 80% 80%, 40% 60%, 60% 30%, 0% 50%;
+  }
+  50% {
+    background-position: center, 30% 30%, 70% 70%, 50% 50%, 70% 40%, 100% 50%;
+  }
+}
+
+@keyframes slimeFloat {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.1;
+  }
+  25% {
+    transform: translateY(-10px) scale(1.05);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translateY(-5px) scale(0.95);
+    opacity: 0.1;
+  }
+  75% {
+    transform: translateY(-15px) scale(1.02);
+    opacity: 0.12;
+  }
+}

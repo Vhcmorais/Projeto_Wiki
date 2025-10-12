@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: #E6F0FF;
+  background: #D6E6FF;
   border-bottom: 1px solid #B3CFFF;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
 }
@@ -103,7 +103,7 @@
   font-size: 1rem;
   border: 1px solid #d1d5db;
   border-radius: 0.5rem;
-  background: #F2F7FF;
+  background: #E6F0FF;
   color: #0066CC;
   transition: all 0.15s ease;
   box-sizing: border-box;

@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Gamepad2, Users, FileText, Search } from 'lucide-react';
 import { useDarkMode } from '../contexts/DarkModeContext';
+import '../pages/cssPages/HomePage.css';
+import '../pages/cssPages/dark.css';
 
 const HomePage = () => {
   const {isDarkMode} = useDarkMode();
