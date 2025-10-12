@@ -1199,12 +1199,12 @@ body::before {
 }
 
 .dark .btn-primary {
-  background-color: var(--text-primary);
-  color: #667eea;
+  background-color: var(--bg-secondary);
+  color: #f163fe;
 }
 
 .dark .btn-primary:hover {
-  background-color: var(--text-secondary);
+  background-color: var(--bg-tertiary);
 }
 
 .dark .btn-secondary {
@@ -1246,7 +1246,7 @@ body::before {
 }
 
 .dark .page-card:hover .page-arrow {
-  color: var(--accent);
+  color: #f163fe;
 }
 
 .dark .stat {
