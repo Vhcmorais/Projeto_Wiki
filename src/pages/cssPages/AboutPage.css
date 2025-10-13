@@ -1,0 +1,148 @@
+/* === Estilos gerais da página === */
+.about-page {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* === Seção de introdução === */
+.about-intro {
+  text-align: center;
+  background-color: rgba(255,255,255,0.3);
+  max-width: 1350px;
+  height: 400px;
+  margin: 0 auto 2rem auto;
+  padding: 0;
+  border-radius: 12px;
+}
+
+.about-logo {
+  margin-top: -5rem;
+  width: 900px;
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.about-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
+  margin: -3.5rem 3rem 0 3rem;
+}
+
+/* === Container de duas colunas (gameplay + mapa) === */
+.about-columns {
+  display: flex;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* permite quebrar em mobile */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* === Seção de jogabilidade === */
+.gameplay-section {
+  flex: 1 1 45%;
+  min-width: 300px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.gameplay-title {
+  font-size: 3rem;
+  text-shadow: 0 2px 3px #1A57FF;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+/* Lista de gameplay */
+.gameplay-list {
+  list-style: none;
+  padding: 0;
+}
+
+.gameplay-item {
+  color: black;
+  margin-bottom: 1.2rem;
+  padding: 0.8rem 1rem 2rem;
+  border-left: 5px solid #1A57FF;
+  background: white;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gameplay-item strong {
+  color: #1A57FF;
+}
+
+.gameplay-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px var(--gameplay-item-hover-shadow);
+}
+
+/* === Seção do mapa === */
+.about-map {
+  flex: 1 1 45%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-map h2 {
+  top: -1000px;
+  font-size: 3rem;
+  text-shadow: 0 2px 3px #1A57FF;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.map-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.map-image:hover {
+  transform: scale(1.05);
+}
+
+/* === Responsividade === */
+@media (max-width: 980px) {
+  .about-logo {
+    width: 100%;
+    max-width: 600px;
+  }
+  .gameplay-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-columns {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  .gameplay-section,
+  .about-map {
+    flex: 1 1 100%;
+  }
+  .gameplay-title {
+    font-size: 1.6rem;
+  }
+  .map-image {
+    max-width: 90%;
+  }
+}

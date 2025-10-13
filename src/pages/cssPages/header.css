@@ -59,6 +59,7 @@
   height: 50px;
   width: auto;
   pointer-events: none;
+  z-index: auto;
 }
 
 .logo span {

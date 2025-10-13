@@ -42,7 +42,7 @@ const HomePage = () => {
             <Search size={18} />
             Encontre na wiki
           </Link>
-          <Link to="/page/getting-started" className="btn btn-secondary">
+          <Link to="/page/about" className="btn btn-secondary">
             Sobre o jogo
             <ArrowRight size={18} />
           </Link>

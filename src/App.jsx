@@ -30,11 +30,11 @@ function App() {
                 <Routes>
                   <Route path="/" element={<HomePage />} />
                   <Route path="/search" element={<SearchPage />} />
-                  <Route path="/about" element={<AboutPage />} />
-                  <Route path="/resources" element={<SlimesPage />} />
-                  <Route path="/team" element={<Dev_Team_Page />} />
-                  <Route path="/dev" element={<WikiDevPage />} />
-                  <Route path="/architecture" element={<ArchitecturePage />} />
+                  <Route path="/page/about" element={<AboutPage />} />
+                  <Route path="/page/resources" element={<SlimesPage />} />
+                  <Route path="/page/team" element={<Dev_Team_Page />} />
+                  <Route path="/page/dev" element={<WikiDevPage />} />
+                  <Route path="/page/architecture" element={<ArchitecturePage />} />
                 </Routes>
               </div>
             </main>
